@@ -1,0 +1,38 @@
+1. File on remote changed
+Files on GitHub - not changed
+
+git add
+git commit
+git push
+
+2. File on GitHub changed
+Files on remote - not changed
+
+git add
+git commit
+git pull
+git push
+
+3. File on GitHub changed
+Same file on remote - changed too
+
+Before or after pull if fetch is used ?
+git add
+git commit
+?
+git pull
+
+4. File on GitHub changed
+Same file on remote - changed too
+
+git fetch
+What's next ?
+
+5. File on GitHub changed
+Same file on remote - changed too
+
+git stash helps ?
+git stash doesnt work after add, commit ?
+
+6. What to do after conflict resolving: add, commit, push ?
+
