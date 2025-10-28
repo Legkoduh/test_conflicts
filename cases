@@ -1,17 +1,33 @@
-1. File on remote changed
-Files on GitHub - not changed
+1. File on local changed
+Files on GitHub (remote) - not changed
 
 git add
 git commit
 git push
+
 
 2. File on GitHub changed
-Files on remote - not changed
+File on local - not changed
 
-git add
-git commit
+git fetch (origin - repo name, if many repos attached to the remote repo on PC)
+git merge origin/branch_name - подтянуть изменения с сервера (удалённого репозитория), если upstream
+git merge branch_name - слить 2 ветки: branch_name в ту, в которой находишься/выполняешь эту команду
+git merge - подтянуть изменения из локальной upstream ветки, если она настроена (main - origin/main)
+
+Если upstream ветка не задана
+git fetch origin main
+git mege origin/main
+
+Или просто
+git pull origin main
+
+Если upstream ветка задана
+git fetch
+git merge
+
+Или просто
 git pull
-git push
+
 
 3. File on GitHub changed
 Same file on remote - changed too
@@ -36,3 +52,5 @@ git stash doesnt work after add, commit ?
 
 6. What to do after conflict resolving: add, commit, push ?
 
+7. File on GitHub changed
+Same file on remote, in the same string - changed too
