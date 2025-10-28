@@ -1,5 +1,5 @@
-1. File on local changed
-Files on GitHub (remote) - not changed
+1. File on remote changed!
+Files on GitHub - not changed
 
 git add
 git commit
