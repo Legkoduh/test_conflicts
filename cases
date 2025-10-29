@@ -32,6 +32,15 @@ git pull
 3. File on GitHub changed
 Same file on remote - changed too
 
+git add
+git commit
+git push > error
+git pull
+resolve conflicts via editor
+PyCharm can make git add automatically or not
+git commit
+git push
+
 Before or after pull if fetch is used ?
 git add
 git commit
@@ -41,8 +50,10 @@ git pull
 4. File on GitHub changed
 Same file on remote - changed too
 
-git fetch
-What's next ?
+git fetch not git add, commit, push
+git pull > error: Your local changes to the following files would be overwritten by merge
+Please commit your changes or stash them before you merge
+
 
 5. File on GitHub changed
 Same file on remote - changed too
