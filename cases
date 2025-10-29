@@ -1,4 +1,4 @@
-1. File on remote
+1. Remote changes 1 File on remote
 Files on GitHub - not changed
 
 git add
@@ -6,7 +6,7 @@ git commit
 git push
 
 
-2. File on GitHub changed
+2. Remote changes 2 File on GitHub changed
 File on local - not changed
 
 git fetch (origin - repo name, if many repos attached to the remote repo on PC)
