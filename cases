@@ -62,9 +62,11 @@ Same file on remote - changed too
 git fetch
 git stash
 git pull
-git stash pop
+git stash pop (changed in different files, or lines of code of the same file)
+git add
+git commit
+git push
 
-git stash helps ?
 git stash doesnt work after add, commit ?
 
 6. What to do after conflict resolving: add, commit, push ?
