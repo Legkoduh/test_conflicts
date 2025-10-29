@@ -1,4 +1,5 @@
-1. Remote changes 1 File on remote
+1. Push local changes to remote repository
+File on remote changed
 Files on GitHub - not changed
 
 git add
@@ -6,7 +7,8 @@ git commit
 git push
 
 
-2. Remote changes 2 File on GitHub changed
+2. Pull remote changed to local using fetch and merge or pull
+File on GitHub changed
 File on local - not changed
 
 git fetch (origin - repo name, if many repos attached to the remote repo on PC)
@@ -29,20 +31,22 @@ git merge
 git pull
 
 
-3. File on GitHub changed
+3. Pull before push
+File on GitHub changed
 Same file on remote - changed too
 
 git add
 git commit
 git push > error
 git pull
-resolve conflicts via editor
-PyCharm can make git add of changed files automatically or not
+> resolve conflicts via editor
+> PyCharm can make git add of changed files automatically, if not - git add
 git commit
 git push
 
 
-4. File on GitHub changed
+4. Fetch and add, commit, pull before push
+File on GitHub changed
 Same file on remote - changed too
 
 git fetch (not git add, commit, push)
@@ -51,12 +55,13 @@ Please commit your changes or stash them before you merge
 git add
 git commit
 git pull
-If no conflicts (changes in different files, or lines of code of the same file) - the vim redactor is displayed
-If conflicts are present - resolve them
+> If no conflicts (changes in different files, or lines of code of the same file) - the vim redactor is displayed
+> If conflicts are present - resolve them
 git push
 
 
-5. File on GitHub changed
+5. Fetch, stash, pull before push (no conflicts)
+File on GitHub changed
 Same file on remote - changed too
 
 git fetch
@@ -68,8 +73,25 @@ git commit
 git push
 
 git stash doesnt work after add, commit ?
+git stash не затрагивает уже закоммиченные изменения
+git stash временно сохраняет незакоммиченные изменения в рабочем каталоге и индексе
 
-6. What to do after conflict resolving: add, commit, push ?
 
-7. File on GitHub changed
+6. Fetch, stash, pull before push (with conflicts)
+Same file on remote - changed on the same line
+git fetch
+git stash
+git pull
+git stash pop (remote and local files changed on the same line)
+> Conflicts in the changed file
+> Resolve all conflicts via UI feature
+> PyCharm can make git add of changed files automatically, if not - git add
+git commit
+git push
+
+
+7. What to do after conflict resolving: add, commit, push ?
+
+
+8. File on GitHub changed
 Same file on remote, in the same string - changed too
