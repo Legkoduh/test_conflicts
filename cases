@@ -78,7 +78,8 @@ git stash временно сохраняет незакоммиченные и�
 
 
 6. Fetch, stash, pull before push (with conflicts)
-Same file on remote - changed on the same line
+File on GitHub changed
+Same file on remote - changed too
 git fetch
 git stash
 git pull
@@ -88,10 +89,3 @@ git stash pop (remote and local files changed on the same line)
 > PyCharm can make git add of changed files automatically, if not - git add
 git commit
 git push
-
-
-7. What to do after conflict resolving: add, commit, push ?
-
-
-8. File on GitHub changed
-Same file on remote, in the same string - changed too
