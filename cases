@@ -1,4 +1,4 @@
-1. File on remote changedwegewgewgewgwegwe
+1. File on remote
 Files on GitHub - not changed
 
 git add
@@ -37,26 +37,32 @@ git commit
 git push > error
 git pull
 resolve conflicts via editor
-PyCharm can make git add automatically or not
+PyCharm can make git add of changed files automatically or not
 git commit
 git push
 
-Before or after pull if fetch is used ?
-git add
-git commit
-?
-git pull
 
 4. File on GitHub changed
 Same file on remote - changed too
 
-git fetch not git add, commit, push
+git fetch (not git add, commit, push)
 git pull > error: Your local changes to the following files would be overwritten by merge
 Please commit your changes or stash them before you merge
+git add
+git commit
+git pull
+If no conflicts (changes in different files, or lines of code of the same file) - the vim redactor is displayed
+If conflicts are present - resolve them
+git push
 
 
 5. File on GitHub changed
 Same file on remote - changed too
+
+git fetch
+git stash
+git pull
+git stash pop
 
 git stash helps ?
 git stash doesnt work after add, commit ?
