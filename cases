@@ -89,3 +89,4 @@ git stash pop (remote and local files changed on the same line)
 > PyCharm can make git add of changed files automatically, if not - git add
 git commit
 git push
+
